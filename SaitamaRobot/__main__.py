@@ -73,16 +73,12 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+  Rikka Takanashi, Group Management Bot !! I am specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+Hello Cutie Rikka Takanashi Here To Help You And Manage Your Group I am made with love by @AcGc_01
 
 *Main* commands available:
  • /help: PM's you this message.
@@ -92,6 +88,7 @@ the things I can help you with.
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
 
+Join My Support If You Have Any Queries: @RikkaSupport
 
 {}
 And the following:
@@ -100,12 +97,9 @@ And the following:
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
-SAITAMA_IMG = "https://telegra.ph/file/5480c2bb0aef9d8715e76.jpg"
+RIKKA_IMG = "https://telegra.ph/file/604cd3f4bf8856eacf9d8.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paypal](ko-fi.com/sawada) or by contacting @Sawada \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @OnePunchDev."""
+DONATE_STRING = """Heya, glad to hear you want to donate!"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +216,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="☑️ Add Zerotwo to your group",
+                                text="☑️ Add ME to your group",
                                 url="t.me/{}?startgroup=true".format(
                                     context.bot.username
                                 ),
@@ -230,24 +224,27 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🚑 Support Group",
-                                url=f"https://t.me/estteam_offical",
+                                text="🔰 Support Group 🔰",
+                                url="https://t.me/RikkaSupport",
                             ),
                             InlineKeyboardButton(
-                                text="🔔 Updates Channel",
-                                url="https://t.me/ZerotwoUpdate",
+                                text="🔔 Updates Channel 🔔",
+                                url="https://t.me/RikkaUpdate",
                             ),
+                            InlineKeyboardButton(
+                                text="⚓️ Group ⚓️",
+                                url="https://t.me/Anime_Clan_Group",
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🧾 Getting started guide",
-                                url="https://t.me/Zerotwoupdate",
+                                text="ᴡɪᴢᴀʀᴅs"
+                                url="https://t.me/RikkaUpdate",
                             )
                         ],
                         [
                             InlineKeyboardButton(
-                                text="🗄 Logs",
-                                url="https://t.me/Zerotwolog",
+                                text="♎️ Help ♎️",
+                                url="https://t.me/Rikka_GroupBot?start=help",
                             )
                         ],
                     ]
